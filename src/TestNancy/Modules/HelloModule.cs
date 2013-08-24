@@ -8,7 +8,8 @@ namespace TestNancy
         {
             Get["/"] = parameters =>
             {
-                return View["index"];
+                string name = "Dave"; // <- uber model 
+                return View["index", name];
             };
         }
     }
